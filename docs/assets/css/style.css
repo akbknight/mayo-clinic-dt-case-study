@@ -506,24 +506,31 @@ section.dark .section-intro { color: rgba(255,255,255,0.65); }
 .bar-label { font-size: 11px; color: var(--gray); }
 
 /* ── Discussion Qs ──────────────────────────────────── */
+#discussion {
+  background: var(--navy);
+}
+#discussion .section-kicker { color: rgba(255,255,255,0.55); }
+#discussion .section-title  { color: #fff; }
+#discussion .section-intro  { color: rgba(255,255,255,0.7); }
+
 .dq-list {
   list-style: none;
   margin-top: 36px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
+  counter-reset: dq;
 }
 .dq-list li {
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.14);
   border-radius: 8px;
-  padding: 20px 22px;
+  padding: 20px 22px 20px 48px;
   font-size: 14px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.88);
   line-height: 1.6;
   counter-increment: dq;
   position: relative;
-  padding-left: 44px;
 }
 .dq-list li::before {
   content: counter(dq);
@@ -536,7 +543,6 @@ section.dark .section-intro { color: rgba(255,255,255,0.65); }
   color: #E8A0A8;
   line-height: 1;
 }
-.dq-list { counter-reset: dq; }
 
 /* ── Downloads ──────────────────────────────────────── */
 .downloads {
