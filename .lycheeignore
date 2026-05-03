@@ -22,3 +22,9 @@ https://www\.healthcaredive\.com/
 https://www\.fiercehealthcare\.com/
 https://www\.healthleadersmedia\.com/
 https://www\.ama-assn\.org/
+
+# Reuters — returns 401 to automated fetchers.
+https://www\.reuters\.com/
+
+# STAT News — returns 404 to automated fetchers (article may be gated/moved).
+https://www\.statnews\.com/
