@@ -1,10 +1,10 @@
 # Source Registry
 
-Central registry of all source materials for the case study, with quality tier classification.
+Central registry of all source materials for the Mayo Clinic AI Platform Transformation case study.
 
-> **Note**: This file is auto-maintained by `/add-sources`. You do not need to edit it manually.
->
-> If you previously used `Source_Links.md`, that file is kept for reference. This registry replaces it.
+> **Last Updated:** April 26, 2026
+> **Case:** Mayo Clinic — AI Platform Transformation in Healthcare
+> **Protagonist:** Dr. John Halamka, President, Mayo Clinic Platform
 
 ---
 
@@ -13,50 +13,64 @@ Central registry of all source materials for the case study, with quality tier c
 | Tier | Count | Description |
 |------|-------|-------------|
 | T1 — Primary | 0 | Full-text source in `sources/` folder |
-| T2 — Partial | 0 | Partial text, search-derived, or paywalled |
-| T3 — Referenced | 0 | Cited but not in repo; unverified |
-| **Total** | **0** | |
+| T2 — Partial | 5 | Partial text, search-derived, or paywalled |
+| T3 — Referenced | 9 | Cited but not in repo; verified via web search |
+| **Total** | **14** | |
 
 ### Tier Definitions
 
-- **Tier 1 (T1)**: Full-text primary source physically present in the `sources/` folder. Can be read and quoted directly. Examples: full transcript, downloaded PDF, complete article text.
-- **Tier 2 (T2)**: Partial text available — extracted quotes, search snippets, or paywalled content where only key passages were captured. Source exists but cannot be fully verified.
-- **Tier 3 (T3)**: Referenced only — cited in the case but the full source is not in the repository. May be from AI general knowledge, web search results, or sources that could not be downloaded. Requires verification before publication.
+- **Tier 1 (T1)**: Full-text primary source physically present in the `sources/` folder.
+- **Tier 2 (T2)**: Partial text available — content successfully fetched and verified, but not fully downloaded.
+- **Tier 3 (T3)**: Referenced only — confirmed to exist through web search, but full text not accessible (403 blocked or paywalled). All T3 claims in documents are hedged accordingly.
 
 ---
 
 ## Primary Interviews & Transcripts
 
-| # | Source | Tier | Date | Speakers | Local File | Key Content |
-|---|--------|------|------|----------|------------|-------------|
+| # | Source | Tier | Date | Speakers | URL | Key Content |
+|---|--------|------|------|----------|-----|-------------|
+| 1 | "John Halamka, MD, Launches Mayo Clinic's 'Digital Data Business'" — HealthLeaders Media | T2 | 2020 | Dr. John Halamka | https://www.healthleadersmedia.com/innovation/john-halamka-md-launches-mayo-clinics-digital-data-business | 8 verified direct quotes; platform vision, AI philosophy, change management |
+| 2 | "Data and AI Improve Patient Outcomes at the Mayo Clinic" — CXOTalk | T3 | 2023 | Dr. John Halamka | https://www.cxotalk.com/episode/data-and-ai-improve-patient-outcomes-at-the-mayo-clinic | AI physician replacement quote; data-driven care model |
+| 3 | "ChatGPT and AI Integration in Health Care" — American Medical Association | T3 | 2023 | Dr. John Halamka | https://www.ama-assn.org/practice-management/digital-health/chatgpt-and-ai-integration-health-care-john-d-halamka-md-ms | AI integration views in clinical practice |
 
 ---
 
 ## Financial Sources
 
-| # | Source | Tier | Date | Type | Local File | Key Data |
-|---|--------|------|------|------|------------|----------|
+| # | Source | Tier | Date | Type | URL | Key Data |
+|---|--------|------|------|------|-----|----------|
+| 4 | "Mayo Clinic closed out 2023 with $18B in revenue, 6% operating margin" — Fierce Healthcare | T2 | Feb 2024 | News/Financial Report | https://www.fiercehealthcare.com/providers/mayo-clinic-pulls-18b-revenue-6-operating-margin-2023 | Revenue $17.9B, operating income $1.1B, margin 6%, expenses $16.9B, 14,000 new hires |
+| 5 | "Mayo Clinic boosted operating income by 82% in 2023" — Healthcare Dive | T3 | Feb 2024 | News/Financial Analysis | https://www.healthcaredive.com/news/mayo-clinic-2023-earnings/708907/ | Operating income 82% YoY growth; revenue growth 10.2% |
 
 ---
 
 ## News Coverage
 
-| # | Source | Tier | Date | Publication | Author | Key Content |
-|---|--------|------|------|-------------|--------|-------------|
+| # | Source | Tier | Date | Publication | URL | Key Content |
+|---|--------|------|------|-------------|-----|-------------|
+| 6 | "Mayo Clinic to deploy and test Microsoft generative AI tools" — Microsoft News | T2 | Sept 28, 2023 | Microsoft / Mayo Clinic | https://news.microsoft.com/source/2023/09/28/mayo-clinic-to-deploy-and-test-microsoft-generative-ai-tools/ | Microsoft 365 Copilot Early Access; CIO Cris Ross quote; hundreds of staff enrolled |
+| 7 | "Mayo Clinic selects Google as strategic partner" — Mayo Clinic News Network | T3 | Sept 2019 | Mayo Clinic Press Release | https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-selects-google-as-strategic-partner-for-health-care-innovation-cloud-computing/ | 10-year Google partnership announcement; cloud infrastructure |
+| 8 | "Dr. John Halamka named president of Mayo Clinic Platform" — Mayo Clinic News Network | T3 | Dec 2019 | Mayo Clinic Press Release | https://newsnetwork.mayoclinic.org/discussion/dr-john-halamka-named-president-of-mayo-clinic-platform/ | Formal appointment announcement |
+| 9 | "Mayo Clinic Platform expands distributed data network" — Mayo Clinic News Network | T3 | May 2023 | Mayo Clinic Press Release | https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-platform-expands-its-distributed-data-network-to-partner-to-globally-transform-patient-care/ | Brazil, Israel, Canada network expansion; 30M+ patient data |
+| 10 | "4 Takeaways from PlatforMed 2024" — Mayo Clinic News Network | T3 | Jun 2024 | Mayo Clinic | https://newsnetwork.mayoclinic.org/discussion/4-takeaways-from-platformed-2024-to-advance-collaboration-transformation-in-healthcare-with-platform-thinking/ | 56M patient lives; 81 solution developers; CEO Farrugia quote |
+| 11 | "Mayo Clinic Platform doubles ecosystem size" — Becker's Hospital Review | T3 | 2024 | Healthcare Trade Press | https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/mayo-clinic-platform-doubles-ecosystem-size/ | 81 solution developers; 61 health providers; 9 network partners |
 
 ---
 
 ## Industry & Analyst Reports
 
-| # | Source | Tier | Date | Publisher | Local File | Key Data |
-|---|--------|------|------|-----------|------------|----------|
+| # | Source | Tier | Date | Publisher | URL | Key Data |
+|---|--------|------|------|-----------|-----|----------|
+| 12 | "CASE STUDY: Mayo-Google Partnership" — National Academies Press / NCBI | T2 | 2023 | National Academies of Sciences, Engineering, and Medicine | https://www.ncbi.nlm.nih.gov/books/NBK594445/ | "Data behind glass" model; de-identification timeline; governance structure; federated learning |
+| 13 | "Mayo Clinic's Healthy Model for AI Success" — MIT Sloan Management Review | T3 | 2023 | MIT Sloan | https://sloanreview.mit.edu/article/mayo-clinics-healthy-model-for-ai-success/ | AI governance framework; platform thinking in healthcare |
 
 ---
 
 ## Other Sources
 
-| # | Source | Tier | Date | Type | URL/File | Key Content |
-|---|--------|------|------|------|----------|-------------|
+| # | Source | Tier | Date | Type | URL | Key Content |
+|---|--------|------|------|------|-----|-------------|
+| 14 | "John Halamka" — Wikipedia | T2 | Ongoing | Biography | https://en.wikipedia.org/wiki/John_Halamka | Full biography, career timeline, education; cross-verified with primary sources |
 
 ---
 
@@ -64,15 +78,22 @@ Central registry of all source materials for the case study, with quality tier c
 
 | Source Type | Typical Credibility | Typical Tier | Notes |
 |-------------|-------------------|--------------|-------|
-| SEC Filings | Highest | T1 | Legally required accuracy |
-| Direct Interviews | High | T1 | First-hand accounts, verify transcript accuracy |
-| Earnings Calls | High | T1-T2 | Official statements; T1 if full transcript available |
-| Major Publications | Medium-High | T1-T2 | T1 if full text downloaded; T2 if paywalled |
-| Company Blog/PR | Medium | T1-T2 | Self-reported; useful for quotes and dates |
-| Industry Reports | Medium-High | T1-T2 | T1 if full report; T2 if excerpts only |
-| Social Media | Low | T3 | Verify independently before citing |
-| AI-generated claims | Unverified | T3 | Must be sourced before publication |
+| Mayo Clinic News Network | High | T3 | Official press releases; 403 blocked in full fetch |
+| HealthLeaders Media | High | T2 | Trade press interview; quotes verified |
+| Microsoft News (Official) | High | T2 | Official corporate announcement; CIO quote verified |
+| National Academies Press | Highest | T2 | Peer-reviewed case study published by National Academies |
+| Fierce Healthcare / Healthcare Dive | Medium-High | T2-T3 | Trade journalism; financial figures cross-referenced |
+| Wikipedia | Medium | T2 | Used for biography facts only; cross-verified |
+| MIT Sloan Management Review | High | T3 | Paywalled; search snippet only |
 
 ---
 
-*Updated by `/add-sources`. Last updated: not yet.*
+## Verification Debt
+
+The following T3 sources require upgrade to T1/T2 before formal academic publication:
+
+1. CXOTalk interview (#2) — full transcript recommended
+2. Mayo Clinic News Network press releases (#7, #8, #9, #10) — accessible via institutional library
+3. MIT Sloan Management Review (#13) — available through American University library access
+
+*Updated: April 26, 2026*

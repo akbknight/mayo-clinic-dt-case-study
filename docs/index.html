@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayo Clinic: Building the Platform for the Future of Medicine</title>
+  <meta name="description" content="An HBR-style case study on Mayo Clinic Platform's AI transformation strategy — the data governance model, strategic partnerships, and unresolved tensions of one of healthcare's boldest digital transformation bets." />
+  <meta name="author" content="Akshay Kumar" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+
+<!-- ══ NAVIGATION ═══════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Mayo Clinic <span>Case Study</span></a>
+    <ul class="nav-links">
+      <li><a href="#challenge">Challenge</a></li>
+      <li><a href="#protagonist">Protagonist</a></li>
+      <li><a href="#decisions">Decisions</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#tensions">Tensions</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<section id="top" class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker">ITEC-617 &nbsp;·&nbsp; HBR-Style Case Study &nbsp;·&nbsp; Spring 2026</p>
+    <h1>Building the Platform for<br>the Future of Medicine</h1>
+    <p class="hero-sub">
+      How Mayo Clinic attempted to transform 157 years of complex clinical data
+      into a technology platform — and what it means when a nonprofit decides
+      to play by platform business rules.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="val">56M</span>
+        <span class="lbl">Patient Lives in Network (2024)</span>
+      </div>
+      <div class="hero-stat">
+        <span class="val">81</span>
+        <span class="lbl">Solution Developers</span>
+      </div>
+      <div class="hero-stat">
+        <span class="val">9</span>
+        <span class="lbl">Institutional Partners, 4 Continents</span>
+      </div>
+      <div class="hero-stat">
+        <span class="val">$17.9B</span>
+        <span class="lbl">2023 Revenue (+10.2% YoY)</span>
+      </div>
+    </div>
+    <p class="hero-meta" style="margin-top:28px;">
+      By <strong style="color:rgba(255,255,255,0.7)">Akshay Kumar</strong> &nbsp;·&nbsp;
+      Kogod School of Business, American University &nbsp;·&nbsp;
+      <a href="https://github.com/akbknight/mayo-clinic-dt-case-study" target="_blank" rel="noopener">
+        View on GitHub ↗
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ══ THE CHALLENGE ════════════════════════════════════ -->
+<section id="challenge">
+  <div class="container">
+    <p class="section-kicker">The Business Problem</p>
+    <h2 class="section-title">A 157-Year Institution. A Platform-Business Bet.</h2>
+    <p class="section-intro">
+      Mayo Clinic's most valuable asset — decades of complex, rare-disease patient data —
+      was sitting in institutional archives. The question was not whether AI could use it.
+      The question was whether Mayo could build a platform around it without betraying the
+      patients and mission that created it.
+    </p>
+
+    <div class="pull-quote">
+      <p>"When I look at the 40 years that I've been in this industry … I've often looked at
+         'when is there a perfect storm for innovation?'"</p>
+      <cite>— Dr. John Halamka, HealthLeaders Media, 2020</cite>
+    </div>
+
+    <p style="font-size:16px; line-height:1.75; max-width:780px; margin-bottom:16px;">
+      When Dr. John Halamka took over as the inaugural President of Mayo Clinic Platform on
+      January 1, 2020, he inherited both an extraordinary opportunity and a structural contradiction.
+      Mayo's clinical depth — genomic sequences paired with 30-year patient trajectories, physician
+      notes capturing the texture of medical reasoning across four decades of hard cases — was
+      genuinely unlike anything in commercial healthcare.
+    </p>
+    <p style="font-size:16px; line-height:1.75; max-width:780px; margin-bottom:16px;">
+      Other health systems had more patients. None had this depth of complexity. And it was
+      precisely the complexity — the rare diseases, the edge cases, the unsolved puzzles — that
+      made Mayo's data most valuable for training AI that needed to learn from the hardest problems,
+      not just the most common ones.
+    </p>
+    <p style="font-size:16px; line-height:1.75; max-width:780px;">
+      Halamka had three months to begin building that platform before COVID-19 arrived in March
+      2020 — turning the abstract question of what a hospital could do with its data into the most
+      urgent question in global health.
+    </p>
+  </div>
+</section>
+
+<!-- ══ PROTAGONIST ══════════════════════════════════════ -->
+<section id="protagonist" class="alt">
+  <div class="container">
+    <p class="section-kicker">The Protagonist</p>
+    <h2 class="section-title">Dr. John Halamka: The Right Person for an Impossible Job</h2>
+    <p class="section-intro">
+      Halamka was unusual enough that he made something healthcare had needed for decades but
+      rarely produced: a clinician who actually understood what the algorithms were doing.
+    </p>
+
+    <div class="protagonist-block">
+      <div class="protagonist-sidebar">
+        <div class="name">Dr. John Halamka</div>
+        <div class="title">President, Mayo Clinic Platform<br>Joined January 1, 2020</div>
+        <div class="tag-list">
+          <span class="tag">Emergency Medicine MD</span>
+          <span class="tag">Computer Scientist</span>
+          <span class="tag">Stanford (Dual Degree)</span>
+          <span class="tag">MD/PhD — UCSF/UC Berkeley</span>
+          <span class="tag">Harvard Medical School</span>
+          <span class="tag">National Academy of Medicine</span>
+          <span class="tag">HITECH Act Advisor</span>
+          <span class="tag">8 Books on Health IT</span>
+        </div>
+        <div style="font-size:12px; color:rgba(255,255,255,0.5); line-height:1.6;">
+          Former CIO, Beth Israel Deaconess Medical Center (20 years).
+          Federal health IT advisor under Bush and Obama administrations.
+          Started his first software company at age 13.
+        </div>
+      </div>
+
+      <div class="protagonist-content">
+        <p>
+          Halamka had watched expensive health IT systems get deployed, clinicians resist them,
+          and promised outcomes never materialize — not because the technology was wrong, but
+          because the humans around it hadn't been prepared for what it would demand of them.
+        </p>
+        <p>
+          His prescription for Mayo Clinic Platform was therefore not primarily technical. It was
+          organizational: build a platform that convened the right people around a shared resource,
+          with governance architecture strong enough to sustain trust across institutions, companies,
+          patient communities, and regulators — simultaneously.
+        </p>
+        <div class="pull-quote" style="margin:20px 0;">
+          <p>"It isn't technology; technology is good enough. It's fear of change."</p>
+          <cite>— Dr. John Halamka, HealthLeaders Media, 2020</cite>
+        </div>
+        <p>
+          By 2024, Halamka was governing a platform ten times the size of the one he had designed
+          the governance rules for in 2020. The question was not whether the platform was succeeding.
+          The question was whether the structures he had built five years earlier were built for
+          what it had become.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THREE STRATEGIC DECISIONS ═══════════════════════ -->
+<section id="decisions">
+  <div class="container">
+    <p class="section-kicker">Strategic Decisions</p>
+    <h2 class="section-title">Three Decisions. Two Tracks. One Bet.</h2>
+    <p class="section-intro">
+      Mayo Clinic Platform was built around three interconnected strategic choices.
+      Together they represent a deliberate two-track AI strategy that Halamka designed
+      as complementary — not competing.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-num">Decision 01 &nbsp;·&nbsp; September 2019</div>
+        <h3>Google Partnership: The Data Enclave</h3>
+        <p>
+          A 10-year strategic alliance with Google Cloud built the "data under glass" architecture:
+          a federated enclave where third parties can train algorithms on Mayo's de-identified
+          patient data without that data ever leaving Mayo's custody. Algorithms come in;
+          trained models go out. Patient data never moves.
+        </p>
+        <p style="margin-top:12px; font-size:13px; color:#374151;">
+          Key safeguard: <strong>Bin-size-of-10</strong> de-identification standard — any output
+          must be attributable to at least 10 individuals. A multi-stakeholder DaTA Board (11
+          community members) reviews all access requests.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-num">Decision 02 &nbsp;·&nbsp; 2022–2024</div>
+        <h3>The Distributed Network: Federated at Scale</h3>
+        <p>
+          Rather than centralizing all relevant health data at Mayo — logistically impossible and
+          politically radioactive — Halamka built a federated network of partner institutions.
+          Each kept physical and legal control of its own data; only analytical insights crossed
+          institutional boundaries.
+        </p>
+        <p style="margin-top:12px; font-size:13px; color:#374151;">
+          By June 2024: <strong>9 partners</strong> across 4 continents,
+          <strong>56 million patient lives</strong>, expanding from Mercy Health (US) to
+          Albert Einstein (Brazil), Sheba Medical (Israel), and University Health Network (Canada).
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-num">Decision 03 &nbsp;·&nbsp; September 2023</div>
+        <h3>Microsoft Partnership: AI in the Workflow</h3>
+        <p>
+          Mayo became one of the first healthcare organizations to deploy Microsoft 365 Copilot.
+          This was not about diagnostics — it was about physician burnout. Surveys showed clinicians
+          spending over half their working hours on documentation rather than patient care.
+        </p>
+        <p style="margin-top:12px; font-size:13px; color:#374151;">
+          <strong>Track 1 (Google):</strong> Clinical diagnostic AI — better diagnoses.
+          <strong>Track 2 (Microsoft):</strong> Productivity AI — physicians who are rested
+          enough to pay attention to what Track 1 shows them.
+        </p>
+      </div>
+    </div>
+
+    <!-- Platform Accelerate callout -->
+    <div style="margin-top:36px; background:#EFF6FF; border:1px solid #BFDBFE; border-radius:8px; padding:24px 28px; max-width:780px;">
+      <p style="font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#1E40AF; margin-bottom:8px;">Platform_Accelerate</p>
+      <p style="font-size:15px; color:#1e3a5f; line-height:1.65;">
+        Launched in 2022 as a 20-week (later 30-week) startup incubation program.
+        Startups get access to de-identified clinical data and expert mentorship;
+        in return, their algorithms are validated against real patient populations
+        at a scale they could never access independently. First cohort (2022): 4 companies.
+        By 2025: <strong>45+ startups</strong> across multiple cohorts.
+      </p>
+    </div>
+
+    <!-- ELEFT example -->
+    <div style="margin-top:20px; background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:24px 28px; max-width:780px;">
+      <p style="font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#166534; margin-bottom:8px;">Case Study in Practice — ELEFT (March 2024)</p>
+      <p style="font-size:15px; color:#14532d; line-height:1.65;">
+        FDA cleared ELEFT — the Eko Low Ejection Fraction Tool — in March 2024: a stethoscope
+        that uses AI co-developed with Mayo Clinic to detect heart failure indicators from
+        cardiac sounds alone, without requiring an echocardiogram. Algorithm developed and
+        validated inside Mayo's data enclave. Product brought to market by Eko Health.
+        <strong>The "wisdom" leaves the enclave. The patient data does not.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ANALYTICS ════════════════════════════════════════ -->
+<section id="analytics" class="alt">
+  <div class="container">
+    <p class="section-kicker">Data &amp; Analysis</p>
+    <h2 class="section-title">Beyond the Charts: Understanding What the Numbers Mean</h2>
+    <p class="section-intro">
+      The charts below show verified data points from public sources. The analytical sections
+      below them go further — applying diagnostic, predictive, and scenario-based frameworks
+      to surface what the data implies for strategy, not just what it reports.
+    </p>
+
+    <!-- Charts row -->
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>Platform Ecosystem Growth</h3>
+        <p class="chart-note">Solution developers and institutional partners, 2022–2024.
+          <em>Note: 2023 developer count is a gap in public data; chart shows verified endpoints.</em>
+        </p>
+        <canvas id="chartGrowth" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Patient Lives in the Network</h3>
+        <p class="chart-note">Cumulative patient lives across all federated institutional partners.</p>
+        <canvas id="chartLives" height="220"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-grid" style="margin-top:24px;">
+      <div class="chart-card">
+        <h3>Global AI in Healthcare Market</h3>
+        <p class="chart-note">
+          2023: $22.45B (actual). 2024–2030: industry projections assuming ~37.5% CAGR.
+          <em>Projections are industry estimates, not Mayo financial forecasts.</em>
+        </p>
+        <canvas id="chartMarket" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>IBM Watson vs. Mayo Clinic Platform</h3>
+        <p class="chart-note">
+          Qualitative assessment (1–5 scale) based on case evidence and public reporting.
+          Scale reflects design intent and governance depth, not guaranteed outcomes.
+        </p>
+        <canvas id="chartRadar" height="220"></canvas>
+      </div>
+    </div>
+
+    <!-- IBM Watson comparison table -->
+    <div class="analytics-card full-width" style="margin-top:28px;">
+      <div class="analytics-type">Diagnostic Analytics</div>
+      <h3>Why Watson Failed — and What Mayo Did Differently</h3>
+      <p>IBM Watson Health is the structural comparison threaded through this case. Understanding
+         the specific failure modes illuminates every governance choice Mayo made.</p>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th class="watson">IBM Watson Health (2011–2022)</th>
+            <th class="mayo">Mayo Clinic Platform (2020–2024)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Training Data Source</td>
+            <td class="bad">Single institution (Memorial Sloan Kettering). Did not generalize.</td>
+            <td class="good">Federated network across 9 institutions, 56M patient lives, 4 continents.</td>
+          </tr>
+          <tr>
+            <td>Validation Method</td>
+            <td class="bad">Physician-annotated cases. Optimized to agree with oncologists, not improve outcomes.</td>
+            <td class="good">Real-world patient population validation inside data enclave. FDA clearance required before clinical use.</td>
+          </tr>
+          <tr>
+            <td>Governance Structure</td>
+            <td class="bad">No independent oversight. No community representation. No accountability mechanism.</td>
+            <td class="good">Multi-stakeholder DaTA Board (11 community members). "One Table" cross-functional review. IRB-equivalent oversight.</td>
+          </tr>
+          <tr>
+            <td>Explainability</td>
+            <td class="bad">Black-box. Physicians couldn't understand recommendations; couldn't calibrate trust.</td>
+            <td class="good">Explainability is a design requirement. Algorithms deployed as decision support, not decision replacement.</td>
+          </tr>
+          <tr>
+            <td>Commercial Pressure</td>
+            <td class="bad">Capabilities marketed before clinical evidence existed. IBM sold to hospital executives, not researchers.</td>
+            <td class="good">FDA clearance bar maintained. Platform_Accelerate validates before deployment, not after sale.</td>
+          </tr>
+          <tr>
+            <td>Outcome</td>
+            <td class="bad">Sold to Francisco Partners (private equity), 2022. MD Anderson: $62M project discontinued 2017.</td>
+            <td class="good">ELEFT cleared FDA, March 2024. Foundation model collaboration with Microsoft Research and Cerebras, January 2025.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Advanced Analytics section -->
+    <div class="analytics-grid" style="margin-top:28px;">
+
+      <!-- Scenario Analysis -->
+      <div class="analytics-card full-width">
+        <div class="analytics-type">Scenario Analysis</div>
+        <h3>Three Futures for Mayo Clinic Platform (2025–2030)</h3>
+        <p>
+          These are analytical constructs, not forecasts. Each scenario rests on a set of
+          stated assumptions about how key variables resolve. The purpose is to identify
+          which assumptions are load-bearing — not to predict which scenario will occur.
+        </p>
+        <table class="scenario-table">
+          <thead>
+            <tr>
+              <th style="width:14%">Scenario</th>
+              <th style="width:28%">Core Assumptions</th>
+              <th style="width:28%">Likely Trajectory</th>
+              <th style="width:30%">Key Risk / Limiting Factor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="scenario-label optimistic">A: Governance Compounds</span></td>
+              <td>DaTA Board legitimacy holds. Partner trust sustained. FDA regulatory clarity improves for AI SaMD. Foundation models generate measurable clinical outcomes.</td>
+              <td>Network effects accelerate. Developer ecosystem reaches 150+. Foundation models trained on Mayo data become a durable competitive moat.</td>
+              <td>Governance overhead becomes operational bottleneck. Multi-homing by developers limits lock-in. Revenue model remains opaque to partners.</td>
+            </tr>
+            <tr>
+              <td><span class="scenario-label moderate">B: Commercial Pressure Builds</span></td>
+              <td>Startup iteration demands increase. Epic App Orchard / Google Med-PaLM offer cheaper validation alternatives. Mayo faces talent competition from Big Tech.</td>
+              <td>Mayo risks becoming a certification service rather than a platform. Developers complete validation, then route around Mayo in subsequent product iterations.</td>
+              <td>The "convener" model sacrifices long-term revenue capture for short-term legitimacy. If Mayo cannot retain developers post-validation, network value leaks.</td>
+            </tr>
+            <tr>
+              <td><span class="scenario-label risk">C: Regulatory or Trust Disruption</span></td>
+              <td>A high-profile AI clinical error at a Platform partner. Regulatory action on HIPAA or nonprofit commercial activity. Patient advocacy challenge to data governance model.</td>
+              <td>Platform growth pauses for governance review. Community board legitimacy tested. Some institutional partners exit the network.</td>
+              <td>Watson Health precedent: regulatory and public trust failures are hard to recover from. The Mayo brand — the platform's core asset — is also its primary vulnerability.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:12px; color:#9CA3AF; margin-top:10px; margin-bottom:0;">
+          All scenarios based on structural features described in publicly available case evidence. Not financial projections.
+        </p>
+      </div>
+
+      <!-- Risk Assessment -->
+      <div class="analytics-card">
+        <div class="analytics-type">Risk Communication</div>
+        <h3>Strategic Tension Severity</h3>
+        <p>Qualitative risk assessment of the four strategic tensions identified in the case,
+           rated by potential impact if unresolved.</p>
+        <div class="risk-grid">
+          <div class="risk-item high">
+            <div class="risk-label">High Impact</div>
+            <h4>Mission vs. Revenue</h4>
+            <p>Nonprofit identity + platform logic are structurally incompatible. Revenue model opacity increases regulatory and advocacy exposure over time.</p>
+          </div>
+          <div class="risk-item high">
+            <div class="risk-label">High Impact</div>
+            <h4>Institutional Identity vs. Platform Logic</h4>
+            <p>Platform businesses extract value from network participants. Mayo's brand depends on not being seen as extracting value from healthcare.</p>
+          </div>
+          <div class="risk-item medium">
+            <div class="risk-label">Medium Impact</div>
+            <h4>Speed vs. Safety</h4>
+            <p>Governance timelines will be tested as the developer ecosystem scales. Watson failed partly because commercial pressure outran clinical validation.</p>
+          </div>
+          <div class="risk-item medium">
+            <div class="risk-label">Medium Impact</div>
+            <h4>Openness vs. Competitive Advantage</h4>
+            <p>Requires trust from institutions that also compete with Mayo for patients, talent, and research funding. The "One Table" model manages this — but at scale, conflicts multiply.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sensitivity Analysis -->
+      <div class="analytics-card">
+        <div class="analytics-type">Sensitivity Analysis</div>
+        <h3>Which Assumptions Drive the Outcome Most?</h3>
+        <p>Sensitivity analysis identifies the variables that, if changed, most change the
+           conclusion. For Mayo Clinic Platform, three assumptions are especially load-bearing.</p>
+        <table class="sensitivity-table">
+          <thead>
+            <tr>
+              <th>Assumption</th>
+              <th>Base Case</th>
+              <th>If Wrong</th>
+              <th>Sensitivity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Institutional trust in Mayo brand</strong></td>
+              <td>High and durable</td>
+              <td>One high-profile clinical AI failure could rapidly erode partner and patient trust</td>
+              <td>
+                <div class="bar-wrap">
+                  <div class="bar" style="width:90%"></div>
+                  <span class="bar-label">Very High</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Governance scales with network size</strong></td>
+              <td>DaTA Board handles 81 developers; assumes processes scale to 200+</td>
+              <td>Governance bottleneck slows innovation, loses developers to less-governed competitors</td>
+              <td>
+                <div class="bar-wrap">
+                  <div class="bar" style="width:75%"></div>
+                  <span class="bar-label">High</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Foundation models produce measurable clinical outcomes</strong></td>
+              <td>Microsoft/Cerebras collaboration generates publishable clinical evidence by 2026</td>
+              <td>If foundation models underperform in clinical settings, the strategic thesis weakens significantly</td>
+              <td>
+                <div class="bar-wrap">
+                  <div class="bar" style="width:60%"></div>
+                  <span class="bar-label">Medium-High</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Market Opportunity -->
+      <div class="analytics-card full-width">
+        <div class="analytics-type">Market Sizing &amp; Opportunity Framing</div>
+        <h3>Mayo's Position in a $208B Market</h3>
+        <p>
+          The global AI in healthcare market was valued at $22.45B in 2023 and is projected to
+          reach $208.23B by 2030 (industry estimate, ~37.5% CAGR). Mayo Clinic Platform is not
+          attempting to capture that entire market. Its model — federated validation + clinical
+          brand credibility — addresses a specific and structurally defensible segment:
+          <strong>the AI validation and clinical credentialing bottleneck</strong> that every
+          health AI company must pass through to reach FDA clearance and hospital adoption.
+        </p>
+        <p>
+          Every algorithm that needs FDA clearance for clinical deployment needs either (a) access
+          to diverse, complex real-world patient data to train on, or (b) validation evidence
+          from a clinically credible institution that regulators and hospital procurement teams trust.
+          Mayo Clinic Platform provides both. No technology company — not Google, not Microsoft,
+          not Epic — has the same combination of clinical brand trust and complex-case data depth.
+        </p>
+        <p>
+          The question the case does not answer: at what point does Mayo's revenue from this
+          position justify the institutional risk of the platform strategy?
+          The financial architecture of Platform — its revenue terms with solution developers,
+          the commercial return from the Google and Microsoft partnerships, the compensation
+          structure for the ELEFT-style validations — has not been publicly disclosed.
+          For a platform asking institutional partners to trust its governance of 56 million
+          patient lives, that opacity is a compounding risk.
+        </p>
+      </div>
+
+    </div><!-- /analytics-grid -->
+  </div>
+</section>
+
+<!-- ══ STRATEGIC TENSIONS ═══════════════════════════════ -->
+<section id="tensions" class="dark">
+  <div class="container">
+    <p class="section-kicker">The Open Questions</p>
+    <h2 class="section-title">Four Tensions. No Tidy Resolutions.</h2>
+    <p class="section-intro">
+      By 2024, Mayo Clinic Platform had achieved scale that would have seemed improbably
+      ambitious as a five-year goal in 2020. But scale amplifies tensions that governance
+      structures were built for smaller numbers.
+    </p>
+
+    <div class="tension-grid">
+      <div class="tension-card">
+        <div class="label">Tension 1</div>
+        <h3>Speed vs. Safety</h3>
+        <p>Health AI startups iterate weekly. Mayo's clinical governance runs on months-long
+           review cycles. Startups in Platform_Accelerate sometimes chafed at the pace.
+           Mayo's clinical leadership sometimes worried that commercial pressure was pushing
+           validation faster than the evidence warranted. IBM Watson is the cautionary
+           tale everyone invokes.</p>
+      </div>
+      <div class="tension-card">
+        <div class="label">Tension 2</div>
+        <h3>Mission vs. Revenue</h3>
+        <p>Mayo Clinic Platform's financial architecture is not publicly disclosed.
+           Solution developer fees, institutional partner terms, and the commercial return
+           from Google and Microsoft are folded into overall institutional income.
+           For a nonprofit with IRS-exempt status, commercial platform revenue
+           carries regulatory and legitimacy risk that increases with scale.</p>
+      </div>
+      <div class="tension-card">
+        <div class="label">Tension 3</div>
+        <h3>Openness vs. Competitive Advantage</h3>
+        <p>The distributed data network requires deep trust from institutional partners.
+           But Mayo competes with some of those partners for patients, research funding,
+           and top physicians. The "One Table" governance model was designed to manage this;
+           whether it sustains trust across nine institutions on four continents,
+           with 81 solution developers and two Big Tech partnerships, remains open.</p>
+      </div>
+      <div class="tension-card">
+        <div class="label">Tension 4</div>
+        <h3>Institutional Identity vs. Platform Logic</h3>
+        <p>Halamka described Platform's goal as transforming Mayo into a "digital data business."
+           Platform businesses operate by a logic — grow the network, monetize interactions,
+           extract value from ecosystem participants — that sits in inherent tension with the
+           values that made Mayo's brand worth anything in the first place.</p>
+      </div>
+    </div>
+
+    <div class="pull-quote" style="background:rgba(255,255,255,0.06); border-left:3px solid #E8A0A8; margin-top:36px; max-width:720px;">
+      <p style="color:rgba(255,255,255,0.88);">"Platforms represent our greatest opportunity to bring real, lasting, and transformative
+         change to our global healthcare system."</p>
+      <cite style="color:rgba(255,255,255,0.5);">— Dr. Gianrico Farrugia, Mayo Clinic CEO, PlatforMed 2024</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DISCUSSION QUESTIONS ══════════════════════════════ -->
+<section id="discussion">
+  <div class="container">
+    <p class="section-kicker">For the Classroom</p>
+    <h2 class="section-title">Discussion Questions</h2>
+    <p class="section-intro">
+      These questions are designed to generate genuine debate — not to have correct answers.
+      Each surfaces a real tradeoff with defensible positions on multiple sides.
+    </p>
+    <ol class="dq-list">
+      <li>Dr. Halamka described Platform's goal as turning Mayo into a "digital data business."
+          Is this description compatible with Mayo's nonprofit mission? Who should draw the line —
+          and how?</li>
+      <li>The "data under glass" model was designed to prevent patient data from leaving Mayo's
+          custody. What are the governance risks of this model as it scales to 56M patient lives
+          across 9 institutions on 4 continents?</li>
+      <li>Halamka argued that "change management is always the hardest task" — not the technology.
+          What specific change management challenges arise in deploying AI tools to physicians at a
+          157-year-old institution? How would you address them?</li>
+      <li>IBM Watson Health failed and was divested in 2022. What structural factors differentiate
+          Mayo Clinic Platform's AI strategy from Watson's? Are those factors sufficient?</li>
+      <li>Halamka said: "If your doctor can be replaced by AI, then your doctor should be replaced
+          by AI." What is the strongest argument in its favor? The strongest argument against?</li>
+      <li>Mayo competes with some of its distributed data network partners for patients, talent,
+          and research funding. How should Mayo manage this conflict of interest? What governance
+          mechanisms would you recommend — and what should their limits be?</li>
+      <li>Platform_Accelerate gives startups access to Mayo's patient data and clinical brand in
+          exchange for validation work. Who benefits more — Mayo or the startups? Is the exchange
+          equitable?</li>
+      <li>Mayo's 2023 capital expenditure was $1.18 billion, much of it for physical campus
+          expansion. How should Mayo balance physical infrastructure investment against digital
+          platform investment? Is there a tension between the two strategic directions?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══ DOWNLOADS ═════════════════════════════════════════ -->
+<section id="downloads" class="alt">
+  <div class="container">
+    <p class="section-kicker">Case Documents</p>
+    <h2 class="section-title">Download the Full Case Materials</h2>
+    <p class="section-intro">
+      All documents prepared for ITEC-617, Spring 2026.
+      Source verification details are in the Additional Sources document and Source Registry.
+    </p>
+    <div class="downloads">
+      <a class="dl-card" href="pdfs/MayoClinic_Case_Final.pdf" download>
+        <div class="dl-icon">📄</div>
+        <div class="dl-info">
+          <div class="title">Main Case (HBR-Style)</div>
+          <div class="sub">Full narrative · ~5,100 words · PDF</div>
+        </div>
+      </a>
+      <a class="dl-card" href="pdfs/MayoClinic_TwoPage_Report_Final.pdf" download>
+        <div class="dl-icon">📋</div>
+        <div class="dl-info">
+          <div class="title">Two-Page Submission Report</div>
+          <div class="sub">Quality, verification &amp; reflection · PDF</div>
+        </div>
+      </a>
+      <a class="dl-card" href="https://github.com/akbknight/mayo-clinic-dt-case-study" target="_blank" rel="noopener">
+        <div class="dl-icon">⌨️</div>
+        <div class="dl-info">
+          <div class="title">Full Repository</div>
+          <div class="sub">Source files · AI usage log · GitHub</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOURCES ════════════════════════════════════════════ -->
+<section id="sources">
+  <div class="container">
+    <p class="section-kicker">Sources</p>
+    <h2 class="section-title">Source Registry</h2>
+    <p class="section-intro">
+      All factual claims in the case are sourced from publicly available materials.
+      T2 = partial text verified; T3 = existence confirmed, full text inaccessible (flagged in document).
+    </p>
+    <ul class="sources-list">
+      <li>
+        <span class="src-tier t2">T2</span>
+        <div class="src-body">
+          <strong>HealthLeaders Media — "John Halamka, MD, Launches Mayo Clinic's 'Digital Data Business'"</strong>
+          <span>2020 · Primary interview source. All Halamka direct quotes verified from full content fetch.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t2">T2</span>
+        <div class="src-body">
+          <strong>Microsoft News — "Mayo Clinic to Use Microsoft 365 Copilot"</strong>
+          <span>September 28, 2023 · Cris Ross CIO quote; Early Access Program enrollment details.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t2">T2</span>
+        <div class="src-body">
+          <strong>Fierce Healthcare — 2023 Mayo Clinic Financial Report</strong>
+          <span>February 2024 · $17.9B revenue, $1.1B operating income, $1.18B capex, 86,000 employees.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t2">T2</span>
+        <div class="src-body">
+          <strong>National Academies of Sciences — Mayo Clinic Platform Case Study</strong>
+          <span>2023 · "Data under glass" architecture description; bin-size-of-10 de-identification standard.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t2">T2</span>
+        <div class="src-body">
+          <strong>Wikipedia — John Halamka Biography</strong>
+          <span>Biographical details; education; Beth Israel Deaconess tenure; HITECH Act advisory role.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t3">T3</span>
+        <div class="src-body">
+          <strong>Mayo Clinic News Network — Platform_Accelerate, ELEFT, Network Expansion (Multiple)</strong>
+          <span>Blocked all automated fetch (403). Platform details confirmed via search snippets; hedged in text.</span>
+        </div>
+      </li>
+      <li>
+        <span class="src-tier t3">T3</span>
+        <div class="src-body">
+          <strong>CXOTalk — "Data and AI Improve Patient Outcomes at Mayo Clinic" (2023)</strong>
+          <span>Halamka "replace your doctor" quote. 403 blocked; confirmed via search. Hedged accordingly.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════ -->
+<footer>
+  <p>
+    <strong style="color:rgba(255,255,255,0.8)">Mayo Clinic: Building the Platform for the Future of Medicine</strong><br>
+    ITEC-617 · Kogod School of Business, American University · Spring 2026<br>
+    Prepared by Akshay Kumar &nbsp;·&nbsp;
+    <a href="https://github.com/akbknight/mayo-clinic-dt-case-study" target="_blank" rel="noopener">
+      github.com/akbknight/mayo-clinic-dt-case-study
+    </a>
+  </p>
+  <p style="margin-top:12px; font-size:11px;">
+    For classroom discussion only. Not an endorsement or illustration of effective or ineffective management.
+    All quotes and data points sourced from publicly available materials. Source tiers documented in repository.
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
