@@ -1,17 +1,37 @@
 # Verification Debt Tracker
 # Auto-maintained by /write-document and verification skills.
-# Do not edit manually.
-#
-# Each item tracks an unverified AI-generated claim that needs
-# a source or correction before publication.
+# Last updated by /verify-all on 2026-05-03.
 #
 # Statuses: unverified | verified | removed | flagged
 #
-# Example item:
-#   - claim: "Revenue grew 35% year-over-year"
-#     document: "Main Case"
-#     source_needed: "Q4 earnings report or 10-K filing"
-#     status: unverified
-#     date_added: "2026-02-23"
-last_updated: "2026-02-23"
-items: []
+last_updated: "2026-05-03"
+items:
+  - claim: "Global AI in healthcare market valued at $22.45 billion in 2023"
+    document: "MayoClinic_Supplement.md — Part 1, Market Overview"
+    source_needed: "Grand View Research 2023 AI in Healthcare Market Report, or equivalent market research firm. Verify exact figures."
+    status: flagged
+    date_added: "2026-05-03"
+
+  - claim: "AI in healthcare market projected to reach $208.23 billion by 2030"
+    document: "MayoClinic_Supplement.md — Part 1, Market Overview"
+    source_needed: "Same source as $22.45B figure above. Confirm projection year and methodology."
+    status: flagged
+    date_added: "2026-05-03"
+
+  - claim: "37.5% compound annual growth rate (AI in healthcare)"
+    document: "MayoClinic_Supplement.md — Part 1, Market Overview"
+    source_needed: "Same source as above. CAGR calculation depends on base year and end year assumptions."
+    status: flagged
+    date_added: "2026-05-03"
+
+  - claim: "Additional Sources bibliography entries 6-16 are placeholder references to Source_Registry.md"
+    document: "MayoClinic_Additional_Sources.md — Bibliography section"
+    source_needed: "Expand bibliography to full 16-entry list with titles, dates, URLs from Source_Registry.md"
+    status: flagged
+    date_added: "2026-05-03"
+
+  - claim: "'If your doctor can be replaced by AI, then your doctor should be replaced by AI' — Halamka"
+    document: "MayoClinic_Case.md, MayoClinic_Additional_Sources.md, MayoClinic_Teaching_Note.md"
+    source_needed: "CXOTalk transcript (#2 in Source Registry) — currently T3. Upgrade to T2 via AU library access or CXOTalk account."
+    status: flagged
+    date_added: "2026-05-03"

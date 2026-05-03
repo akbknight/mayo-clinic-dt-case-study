@@ -13,9 +13,9 @@
 
 Dr. John Halamka joined Mayo Clinic Platform in January 2020 at a historically significant moment for health AI. Three forces converged between 2018 and 2020 to create conditions that had not previously existed:
 
-**Algorithmic capability**: The 2017 publication of "Attention Is All You Need" (Vaswani et al., Google Brain) introduced the transformer architecture that would eventually power GPT-3, BERT, and all modern large language models. By 2020, researchers were applying transformer-based models to clinical notes, radiology images, and genomic sequences with performance that exceeded earlier approaches by significant margins.
+**Algorithmic capability**: The 2017 publication of "Attention Is All You Need" (Vaswani, A. et al., Google Brain, *NeurIPS 2017*) introduced the transformer architecture that would eventually power GPT-3, BERT, and all modern large language models. By 2020, researchers were applying transformer-based models to clinical notes, radiology images, and genomic sequences with performance that exceeded earlier approaches by significant margins.
 
-**Regulatory clarification**: In 2019, the FDA published its "Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning-Based Software as a Medical Device," providing the first structured guidance for how adaptive AI clinical tools would be regulated. This reduced uncertainty that had previously discouraged capital investment in clinical AI.
+**Regulatory clarification**: In 2019, the FDA published its "Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning-Based Software as a Medical Device" (FDA.gov, April 2019), providing the first structured guidance for how adaptive AI clinical tools would be regulated. This reduced uncertainty that had previously discouraged capital investment in clinical AI.
 
 **Cloud infrastructure maturity**: Google Cloud, AWS, and Microsoft Azure each launched dedicated healthcare cloud environments (Google Cloud Healthcare API, AWS HealthLake, Azure Health Data Services) between 2017 and 2020. These environments offered HIPAA-compliant storage, FHIR-native data exchange, and GPU compute -- infrastructure that previously required tens of millions in capital expenditure from health systems themselves.
 
@@ -23,7 +23,7 @@ These three forces created a window in which platforms combining institutional c
 
 ### Market Overview
 
-The global AI in healthcare market was valued at approximately $22.45 billion in 2023 and is projected to reach $208.23 billion by 2030, a compound annual growth rate of approximately 37.5%. Growth is driven by four factors:
+The global AI in healthcare market was valued at approximately $22.45 billion in 2023 and is projected to reach $208.23 billion by 2030, a compound annual growth rate of approximately 37.5% (Source: Grand View Research, "Artificial Intelligence in Healthcare Market Size, Share & Trends Analysis Report," 2023 -- T3, figures widely cited in trade press). Growth is driven by four factors:
 
 1. **Data accumulation**: Electronic health records (EHRs) mandated since the HITECH Act of 2009 have generated massive, standardized clinical datasets.
 2. **Compute availability**: Cloud infrastructure has made GPU-scale computation accessible to health systems that could not build it themselves.

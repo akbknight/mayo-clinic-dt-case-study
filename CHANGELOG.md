@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Mayo-Case-Final] - 2026-05-03
+
+Full verification pipeline + document expansion for final submission.
+
+### Added
+- `verify-all-2026-05-03.log` — Master quality report (5 items flagged, 2 resolved)
+- `assess-sources-2026-05-03.log` — Source tier audit (YELLOW — adequate for classroom)
+- `assess-bias-2026-05-03.log` — Bias analysis (MEDIUM — Teaching Note mitigates)
+- `verify-quotes-2026-05-03.log` — Quote verification (13/13 verified or hedged; 0 fabricated)
+- `verify-sources-2026-05-03.log` — Attribution check (35/47 fully attributed)
+- `validate-financials-2026-05-03.log` — Financial validation (0 arithmetic errors; 3 unsourced market figures)
+- `verify-consistency-2026-05-03.log` — Cross-document consistency (23/23 data points consistent)
+- `verify-cross-document-2026-05-03.log` — Structural alignment (15 pass, 1 warn, 2 fail — actionable)
+- `verify-links-2026-05-03.log` — URL validation (7 T2 active; 4 Mayo 403 blocks documented)
+- `PROJECT_CONTEXT.md` — Updated with current phase, source quality, and open debt summary
+
+### Changed
+- **MayoClinic_Additional_Sources.md** — Expanded from 1,873 to 3,853 words:
+  - Added Exhibit 9: IBM Watson vs. Mayo structural comparison with verified evidence
+  - Added Exhibit 10: Data governance architecture technical specifications (NCBI T2)
+  - Added Exhibit 11: Platform_Accelerate startup cohort details (Cohorts 1-5)
+  - Added AI Development Methodology Note with full verification summary
+  - Expanded bibliography from 5-entry placeholder to complete 16-entry list with tiers and usage notes
+- **MayoClinic_Supplement.md** — Source citations added:
+  - Vaswani et al. 2017: added "NeurIPS 2017" venue citation
+  - FDA 2019 framework: added "FDA.gov, April 2019" reference
+  - AI market projection: added "(Source: Grand View Research, 2023 — T3)" inline
+- **verification-debt.yaml** — Updated from empty template to 5 flagged items (3 AI market projection, 1 bibliography placeholder, 1 CXOTalk quote)
+- **docs/index.html** — Downloads section updated with verification completion date (May 3, 2026) and corrected word count
+- **case-study/pdf/** — Both PDFs regenerated after document fixes (Report: 6KB/3pp; Case: 27KB/11pp)
+- **docs/pdfs/** — Updated copies of both PDFs for GitHub Pages
+
 ## [3.1.0] - 2026-02-23
 
 Add VS Code + GitHub Copilot as a second agentic AI path alongside Claude Code. Students with GitHub Education get Copilot Pro free, making this an accessible alternative with Agent Mode (file read/write, terminal commands, custom instructions).

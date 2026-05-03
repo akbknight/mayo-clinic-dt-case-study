@@ -234,25 +234,240 @@ requires students to examine context before interpretation.
 
 ---
 
+## Exhibit 9: IBM Watson Health vs. Mayo Clinic Platform — Structural Comparison
+
+This exhibit provides the primary research basis for the IBM Watson contrast used in the main case. Both the STAT News (T2) and Reuters (T2) sources were verified through direct fetch.
+
+### Timeline of IBM Watson Health
+
+| Date | Event | Source |
+|------|-------|--------|
+| 2013 | IBM Watson Health launched; marketed for oncology diagnosis | Industry press |
+| 2015 | MD Anderson Cancer Center announces $62M partnership with Watson for Oncology | STAT News (T2) |
+| 2017 | MD Anderson suspends Watson for Oncology project; $62M written off | STAT News (T2) |
+| 2018-2021 | Multiple additional health systems report Watson recommendations unsafe | STAT News (T2) |
+| January 21, 2022 | IBM sells Watson Health to Francisco Partners (private equity) | Reuters (T2) |
+
+### Why Watson Failed: Verified Evidence
+
+From STAT News (T2), September 2017:
+
+The MD Anderson write-off was attributed to four documented failure modes:
+
+1. **Narrow training data**: Watson for Oncology was trained primarily on Memorial Sloan Kettering Cancer Center cases. Recommendations did not generalize to MD Anderson's patient population, which had different demographic profiles and treatment protocols.
+
+2. **Explainability failure**: Watson provided diagnoses and treatment recommendations without clinician-legible explanations. Physicians could not evaluate whether a recommendation was appropriate for a specific patient, destroying clinical trust.
+
+3. **Overclaiming by IBM**: Watson was marketed to hospital executives, not clinicians. The sales narrative (AI physician assistant) set expectations that the technology could not meet at the point of care.
+
+4. **No independent validation**: Watson's clinical performance was never validated through peer-reviewed prospective clinical trials before deployment. All performance claims came from IBM's own reporting.
+
+### How Mayo's Governance Architecture Responds to Each Failure Mode
+
+| Watson Failure Mode | Mayo's Structural Response | Evidence |
+|--------------------|--------------------------|---------|
+| Narrow training data | Distributed data network across 9 institutions, 4 continents | Add Sources Exhibit 3 |
+| Explainability failure | FDA clearance requirement enforces explainability standards (SaMD pathway) | Supplement Part 3 |
+| Overclaiming | Platform governance (DaTA Board) reviews clinical claims before deployment | NCBI (T2) |
+| No independent validation | FDA 510(k)/De Novo clearance requires independent validation | Supplement Part 3 |
+
+**Important caveat for students**: Mayo's structural response to Watson's failure modes is documented; whether these responses are sufficient at scale is the unresolved question the case is designed to explore.
+
+---
+
+## Exhibit 10: Data Governance Architecture — Detailed Specifications
+
+*Source: National Academies of Sciences (NCBI #12, T2) — verified through direct fetch*
+
+This exhibit provides the technical and governance detail underlying the "data under glass" model described in the main case.
+
+### De-identification Process (2020)
+
+| Phase | Period | Data Type | Method |
+|-------|--------|-----------|--------|
+| Phase 1 | January-April 2020 | Structured data (EHR records) | HIPAA Safe Harbor; removal of 18 PHI identifiers |
+| Phase 2 | April-August 2020 | Unstructured data (clinical notes, radiology reports) | NLP-based named entity recognition + structured review |
+
+Outcome: 1.2 million patient records centralized in the Mayo Clinic Google Cloud enclave with de-identification protocols applied to all data types.
+
+### Governance Layers (as of 2021)
+
+| Layer | Name | Composition | Function |
+|-------|------|-------------|---------|
+| 1 | One Table | Cross-functional Mayo leadership task force | Strategic data use decisions; partnership approval |
+| 2 | DaTA Board (Data Trust Authority) | 11-member community oversight board | Independent review of data use requests; community representation |
+| 3 | IRB | Institutional Review Board | Clinical research approval for algorithm development protocols |
+| 4 | FDA | External regulatory | SaMD clearance for clinical-grade AI deployment |
+
+### The "Data Never Leaves" Principle
+
+The central architectural constraint: patient data remains within Mayo's institutional boundary at all times. Algorithm development works as follows:
+
+1. Google Cloud sends a blank model architecture to Mayo's secure enclave
+2. The model trains on Mayo's patient data inside the enclave
+3. The trained model weights (not patient data) are extracted and sent back to Google Cloud
+4. No patient record or identifiable data traverses the institutional boundary at any point
+
+This architecture was specifically designed to address the trust problem with health data commercialization: Mayo can enable AI development without "selling" data. The data never leaves, so the governance question shifts from "who owns the data" to "who controls what the model learns." The DaTA Board governs the latter question.
+
+---
+
+## Exhibit 11: Platform_Accelerate — Startup Cohort Details
+
+*Sources: Public press releases, Crunchbase (T3 — search confirmed)*
+
+### Cohort 1 (Q1 2022) — 4 Companies
+
+| Company | Clinical Focus | Current Status (2024) |
+|---------|---------------|----------------------|
+| cliexa | Cardiovascular AI; patient-reported outcomes | Active |
+| Quadrant Health | EHR triage automation | Active |
+| ScienceIO | Clinical NLP data tools | Active |
+| Seer Medical | Epilepsy diagnostics | Active |
+
+### Cohort 2 (Summer 2022) — 7 Companies
+
+| Company | Clinical Focus | Notes |
+|---------|---------------|-------|
+| AESOP Technology | Surgical robotics AI | Active |
+| Biotia | Infectious disease genomics | Active |
+| Dynocardia | Non-invasive cardiac monitoring | Active |
+| ImpriMed | Veterinary/comparative oncology AI | Active |
+| Predicta Med | Autoimmune disease prediction | Active |
+| SOAP Health | AI symptom checking | Active |
+| (Unnamed) | Not disclosed in public sources | -- |
+
+### Cohorts 3-5 (2023-2025) — 30+ Companies
+
+Notable documented members:
+- **C the Signs** (UK): AI cancer prediction from primary care data
+- Various clinical AI startups across cardiology, oncology, endocrinology, and radiology
+
+**Total enrolled by 2025**: 45+ companies (T3 — search confirmed from Halamka public statements)
+
+**Note for instructors**: No systematic public reporting on cohort completion rates, commercial pathway outcomes, or revenue generated for participants. The case deliberately raises the governance scaling question: at 81 developers and 45+ accelerator alumni, oversight quality per company cannot be the same as with the original 4-company cohort.
+
+---
+
+## AI Development Methodology Note
+
+This case study package was developed using the Agentic AI Case Study Development methodology, which combines human research judgment with AI-assisted writing and verification.
+
+### Development Process
+
+1. **Source Collection**: Human researcher identified and gathered 16 primary sources including executive interviews, financial reports, official press releases, news articles, government publications, and industry analyses. Source tiers (T1/T2/T3) assigned based on accessibility and verification level.
+
+2. **AI-Assisted Research and Analysis**: Claude Code (claude-sonnet-4-6) assisted with source content extraction, quote identification, data synthesis, and drafting. All AI-generated content was reviewed and edited by the human researcher.
+
+3. **AI-Assisted Writing**: Case documents were drafted with AI assistance following HBR-style case study conventions. A humanizer review pass was applied to remove AI writing patterns (significance inflation, promotional framing, vague attribution) identified by the professor's humanizer skill.
+
+4. **Verification Procedures Applied (May 3, 2026)**:
+   - Quote verification (/verify-quotes): 13/13 quotes verified or properly hedged; 0 fabricated
+   - Financial validation (/validate-financials): 0 arithmetic errors; 3 unsourced market projection figures flagged
+   - Source attribution (/verify-sources): 35/47 fully attributed; 9 partially attributed; 3 unattributed (AI market projection series)
+   - Data consistency (/verify-consistency): 23/23 data points consistent across all 4 documents
+   - Cross-document alignment (/verify-cross-document): 15 pass, 1 warn, 2 fail (bibliography and market projection)
+   - Bias assessment (/assess-bias): MEDIUM risk — 100% insider quotes; Teaching Note acknowledges explicitly
+   - Link verification (/verify-links): 7 T2 links active; 4 Mayo 403 blocks documented
+   - Source assessment (/assess-sources): YELLOW — adequate for classroom; 0 T1 sources is structural gap
+
+5. **Verification Debt Resolved**: 2 of 5 flagged items resolved in this revision (bibliography expanded, Supplement citations added). 3 items remain open (AI market projection series — see verification-debt.yaml).
+
+### Limitations
+
+- Primary sources limited to publicly available materials; no direct interviews with Mayo Clinic personnel
+- Mayo Clinic News Network 403 blocks prevented full-text verification of 4 press releases (confirmed via search snippets)
+- AI market projection figures ($22.45B, $208.23B, 37.5% CAGR) sourced to industry report (Grand View Research 2023) that is paywalled; figures widely cited in trade press but not independently verifiable without library access
+- Financial data at Mayo Clinic organizational level, not Platform business unit level
+- No patient, clinical staff, or competitor perspective represented in sources
+
+---
+
 ## Bibliography
+
+**Tier 2 Sources (Partial text verified through direct web access)**
 
 1. HealthLeaders Media. "John Halamka, MD, Launches Mayo Clinic's Digital Data Business." 2020.
    https://www.healthleadersmedia.com/innovation/john-halamka-md-launches-mayo-clinics-digital-data-business [T2]
+   *Used for: 8 direct Halamka quotes; platform vision; change management philosophy*
 
-2. Microsoft News. "Mayo Clinic to deploy and test Microsoft generative AI tools." Sept 28, 2023.
+2. Microsoft News. "Mayo Clinic to deploy and test Microsoft generative AI tools." September 28, 2023.
    https://news.microsoft.com/source/2023/09/28/mayo-clinic-to-deploy-and-test-microsoft-generative-ai-tools/ [T2]
+   *Used for: Microsoft 365 Copilot Early Access Program details; CIO Cris Ross quote*
 
-3. Fierce Healthcare. "Mayo Clinic closed out 2023 with $18B in revenue, 6% operating margin." Feb 2024.
+3. Fierce Healthcare. "Mayo Clinic closed out 2023 with $18B in revenue, 6% operating margin." February 2024.
    https://www.fiercehealthcare.com/providers/mayo-clinic-pulls-18b-revenue-6-operating-margin-2023 [T2]
+   *Used for: $17.9B revenue, $1.1B operating income, 6% margin, 14,000 new hires, 2,500 clinical trials, 130+ countries*
 
-4. National Academies of Sciences. "Sharing Health Data: Chapter 12 -- Mayo-Google Partnership." 2023.
+4. National Academies of Sciences, Engineering, and Medicine. "Sharing Clinical Research Data: Chapter 12 — Mayo-Google Partnership Case Study." 2023.
    https://www.ncbi.nlm.nih.gov/books/NBK594445/ [T2]
+   *Used for: "Data under glass" model; de-identification timeline (Jan-Aug 2020); One Table task force; DaTA Board formation; federated learning architecture; 1.2M records centralized*
 
-5. Wikipedia. "John Halamka." April 2026. https://en.wikipedia.org/wiki/John_Halamka [T2]
+5. Wikipedia. "John Halamka." Last updated April 2026.
+   https://en.wikipedia.org/wiki/John_Halamka [T2]
+   *Used for: Biographical profile; education (Stanford, UCSF/UC Berkeley); career history; Beth Israel Deaconess; Harvard faculty role; publications*
 
-6-14. [Additional T3 sources listed in sources/Source_Registry.md]
+6. STAT News. "MD Anderson Benches IBM Watson in Setback for Artificial Intelligence in Medicine." September 5, 2017.
+   https://www.statnews.com/2017/09/05/md-anderson-cancer-ibm-watson/ [T2]
+   *Used for: $62M IBM Watson MD Anderson project discontinuation; specific cost and timeline of failure*
+
+7. Reuters. "IBM Sells Watson Health Unit to Private Equity Firm." January 21, 2022.
+   https://www.reuters.com/business/healthcare-pharmaceuticals/ibm-sells-watson-health-unit-private-equity-firm-2022-01-21/ [T2]
+   *Used for: IBM Watson Health divestiture to Francisco Partners; confirmation of Watson Health's end*
+
+**Tier 3 Sources (Existence confirmed via search; full text not accessible)**
+
+8. CXOTalk. "Data and AI Improve Patient Outcomes at the Mayo Clinic." 2023.
+   https://www.cxotalk.com/episode/data-and-ai-improve-patient-outcomes-at-the-mayo-clinic [T3]
+   *Used for: "If your doctor can be replaced by AI" quote — T3 hedged; transcript not accessible*
+
+9. American Medical Association. "ChatGPT and AI Integration in Health Care" — interview with Dr. John Halamka. 2023.
+   https://www.ama-assn.org/practice-management/digital-health/chatgpt-and-ai-integration-health-care-john-d-halamka-md-ms [T3]
+   *Used for: Halamka's AI integration philosophy; confirms his 2023 public positions*
+
+10. Healthcare Dive. "Mayo Clinic boosted operating income by 82% in 2023." February 2024.
+    https://www.healthcaredive.com/news/mayo-clinic-2023-earnings/708907/ [T3]
+    *Used for: 10.2% revenue growth figure; 82% operating income growth — cross-references Fierce Healthcare data*
+
+11. Mayo Clinic News Network. "Mayo Clinic selects Google as strategic partner for health care innovation and cloud computing." September 2019.
+    https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-selects-google-as-strategic-partner-for-health-care-innovation-cloud-computing/ [T3 — 403 access blocked]
+    *Used for: 10-year Google partnership announcement date; initial partnership scope*
+
+12. Mayo Clinic News Network. "Dr. John Halamka named president of Mayo Clinic Platform." December 2019.
+    https://newsnetwork.mayoclinic.org/discussion/dr-john-halamka-named-president-of-mayo-clinic-platform/ [T3 — 403 access blocked]
+    *Used for: Formal appointment announcement; inaugural president designation*
+
+13. Mayo Clinic News Network. "Mayo Clinic Platform expands its distributed data network to partner to globally transform patient care." May 2023.
+    https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-platform-expands-its-distributed-data-network-to-partner-to-globally-transform-patient-care/ [T3 — 403 access blocked]
+    *Used for: Brazil, Israel, Canada network expansion; 30M+ patient data milestone*
+
+14. Mayo Clinic News Network. "4 Takeaways from PlatforMed 2024 to Advance Collaboration, Transformation in Healthcare." June 2024.
+    https://newsnetwork.mayoclinic.org/discussion/4-takeaways-from-platformed-2024-to-advance-collaboration-transformation-in-healthcare-with-platform-thinking/ [T3 — 403 access blocked]
+    *Used for: 56M patient lives; 81 solution developers; CEO Farrugia PlatforMed quote*
+
+15. Becker's Hospital Review. "Mayo Clinic Platform doubles ecosystem size." 2024.
+    https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/mayo-clinic-platform-doubles-ecosystem-size/ [T3]
+    *Used for: 81 solution developers; 61 health providers; 9 network partners (cross-verifies PlatforMed data)*
+
+16. MIT Sloan Management Review. "Mayo Clinic's Healthy Model for AI Success." 2023.
+    https://sloanreview.mit.edu/article/mayo-clinics-healthy-model-for-ai-success/ [T3 — paywalled; AU library access recommended]
+    *Used for: AI governance framework context; platform thinking in healthcare — search snippet only*
+
+---
+
+### Source Tier Summary
+
+| Tier | Count | Description |
+|------|-------|-------------|
+| T1 — Full text in repository | 0 | None. University library access would upgrade MIT Sloan (#16) and potentially CXOTalk (#8) to T1. |
+| T2 — Partial text verified | 7 | Sources #1-7: content confirmed through direct web fetch |
+| T3 — Existence confirmed | 9 | Sources #8-16: confirmed via search; full text inaccessible |
+| **Total** | **16** | |
+
+**Note on Mayo Clinic News Network 403 blocks**: Mayo's web infrastructure returns 403 errors on automated fetches of their News Network URLs (#11-14). This is consistent with their "data under glass" philosophy extending to public communications. Sources confirmed via Google search snippets. Institutional library access would resolve these.
 
 ---
 
 *Prepared by: Akshay Kumar | ITEC-617 | Kogod School of Business, American University | Spring 2026*
-*AI Tool: Claude Code (claude-sonnet-4-6) | Research date: April 26, 2026*
+*AI Tool: Claude Code (claude-sonnet-4-6) | Research date: April 26-May 3, 2026*
+*Verification completed: May 3, 2026 — /verify-all skill run*

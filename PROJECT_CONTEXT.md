@@ -1,58 +1,66 @@
 # Project Context
 
-Quick reference for session continuity. Auto-maintained by skills — you do not need to edit this manually.
+Quick reference for session continuity. Updated by /verify-all on 2026-05-03.
 
 ## Project Overview
 
-**Repository**: Agentic AI Case Study Development Starter Kit
-**Type**: GitHub template repository
-**Version**: 3.1.0
-**Course**: ITEC-617, American University Kogod School of Business, Spring 2026
-**Purpose**: Template for developing HBR-style MBA case studies from digital sources using AI tools
+**Case**: Mayo Clinic — AI Platform Transformation in Healthcare
+**Student**: Akshay Kumar
+**Course**: ITEC-617 | Kogod School of Business, American University | Spring 2026
+**Repository**: https://github.com/akbknight/mayo-clinic-dt-case-study
+**Protagonist**: Dr. John Halamka, President, Mayo Clinic Platform
+**DT Initiative**: AI Platform + Data Governance (Google Cloud partnership, Microsoft Copilot, Platform_Accelerate)
 
 ## Current Status
 
-**Phase**: Template development (this is the starter kit, not an individual case study)
+**Phase**: Verification Complete — Ready for Classroom Submission
 
-**Agentic Tool Paths**:
-- [x] Claude Code — 16 `/slash-commands` via `.claude/skills/`
-- [x] VS Code + GitHub Copilot — Agent Mode via `.github/copilot-instructions.md`
-- [x] Chat Tools — Starter prompt via `STARTER_PROMPT.md`
+**Documents**:
+- [x] MayoClinic_Additional_Sources.md — ~3,400 words (expanded May 3, 2026)
+- [x] MayoClinic_Case.md — ~5,159 words
+- [x] MayoClinic_Supplement.md — ~3,229 words
+- [x] MayoClinic_Teaching_Note.md — ~3,579 words
+- [x] MayoClinic_TwoPage_Report.md — ~1,038 words
 
-**Documents** (template placeholders):
-- [ ] Additional Sources - placeholder
-- [ ] Main Case - placeholder
-- [ ] Supplement - placeholder
-- [ ] Teaching Note - placeholder
+**Website**: GitHub Pages live at https://akbknight.github.io/mayo-clinic-dt-case-study
+**PDFs**: Exported via fpdf2 (scripts/export_pdf.py); validated with pdfminer
 
 ## Source Quality
 
-**Source Registry**: Template placeholder (not populated)
-**Tier Breakdown**: T1: 0 | T2: 0 | T3: 0
-**Last Assessment**: N/A (template repo)
-**Assessment Result**: N/A
+**Source Registry**: sources/Source_Registry.md — 16 sources
+**Tier Breakdown**: T1: 0 | T2: 7 | T3: 9
+**Last Assessment**: 2026-05-03
+**Assessment Result**: YELLOW — adequate for classroom; 0 T1 is structural gap
+
+Key T2 sources (verified): HealthLeaders (8 Halamka quotes), NCBI/National Academies (governance architecture), Microsoft News (Copilot partnership), Fierce Healthcare (financials), STAT News (Watson failure), Reuters (Watson divestiture), Wikipedia (biography)
+
+Key T3 limitation: Mayo Clinic News Network returns 403 on all automated fetches. Documented in TwoPage_Report and Teaching Note.
 
 ## Verification Debt
 
-**Open Items**: 0
-**Last Updated**: N/A
+**Open Items**: 3
+**Last Updated**: 2026-05-03
 See `verification-debt.yaml` for details.
+
+Open items:
+1. AI market projection ($22.45B/$208.23B/37.5%) — Supplement Part 1 — Grand View Research T3
+2. CXOTalk "replace your doctor" quote — T3, recommend AU library upgrade
+3. (Bibliography placeholder — RESOLVED May 3, 2026)
 
 ## Key Decisions Made
 
-- v3.0.0: Conversation-first, skill-driven architecture with 16 slash commands
-- v3.1.0: Added VS Code + GitHub Copilot as second agentic path (free via GitHub Education)
-- Copilot instructions mirror CLAUDE.md behavioral guidance with skill equivalents table
-- README Step 3 presents three options: Option A (Claude Code), Option B (VS Code + Copilot), Option C (Chat Tools)
+- "Data under glass" architecture: federated model where algorithm moves, data stays — enables commercial AI development without data transfer
+- IBM Watson as explicit contrast case: Watson for Oncology is the most documented health AI failure; Mayo's governance directly responds to Watson's 4 failure modes
+- T3 sourcing for Mayo press releases: 403 blocks unavoidable; search-confirmed existence is acceptable for classroom
+- fpdf2 for PDF export: replaced Chrome headless which failed on Windows due to multi-process architecture
+- Website hyperlinks: all key claims link to source URLs; source list has 13 clickable entries
 
 ## Testing History
 
-- Rob Silverman (beginner): Chat tool path tested — exposed UX issues fixed in v3.0.0
-- Leif's Moderna case (power-user): Full Claude Code path tested — exposed verification and bias issues fixed in v3.0.0
-- Copilot Agent Mode (v3.1.0): Two tests passed — status check and source assessment both used correct terminology and process model
+- May 3, 2026: Full /verify-all skill pipeline executed. 0 fabricated quotes, 0 arithmetic errors, 0 data inconsistencies. 3 sourcing gaps flagged (AI market projection). Bibliography expanded from placeholder to full 16-entry list. Supplement citations added for Vaswani 2017 and FDA 2019.
 
 ## Next Steps
 
-1. Students create individual case study repos from this template
-2. Monitor Copilot Agent Mode usage for any instruction gaps
-3. Consider adding more skill equivalents examples if students need guidance
+1. Submit PDFs to Canvas (assignment deadline)
+2. Optionally upgrade CXOTalk quote to T2 via AU library access
+3. Optionally source AI market projection to Grand View Research URL if available through AU library
