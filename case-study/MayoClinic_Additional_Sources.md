@@ -33,25 +33,25 @@ journalism, a National Academies of Sciences case study, and financial news repo
 On the timing of Mayo Clinic Platform:
 
 > "When I look at the 40 years that I've been in this industry ... I've often looked at when is there a perfect storm for innovation?"
-
+>
 > "Mayo -- an $18 billion organization with 86,000 employees, and an urgency to do digital transformation -- has a perfect storm opportunity."
 
 On the platform model:
 
 > "You need a platform by which you can convene people and that may mean third-party companies, academics, or government leaders."
-
+>
 > "The Mayo brand is a very powerful way to bring people together."
 
 On AI and clinical judgment:
 
 > "Machine learning is pattern recognition. As a clinician, I was trained to recognize patterns."
-
+>
 > "Machine learning is not replacing humans, but [offers] tools that augment human decision-making."
 
 On change management as the central challenge:
 
 > "It isn't technology; technology is good enough. It's fear of change."
-
+>
 > "Change management is always the hardest task."
 
 ---
@@ -167,6 +167,7 @@ requires students to examine context before interpretation.
 | Extended | Microsoft Research + Cerebras Systems: radiology foundation models (2025) |
 
 *Source: Microsoft News, September 28, 2023 [T2]*
+
 ---
 
 ## Exhibit 5: Chronological Timeline
@@ -388,70 +389,70 @@ This case study package was developed using the Agentic AI Case Study Developmen
 **Tier 2 Sources (Partial text verified through direct web access)**
 
 1. HealthLeaders Media. "John Halamka, MD, Launches Mayo Clinic's Digital Data Business." 2020.
-   https://www.healthleadersmedia.com/innovation/john-halamka-md-launches-mayo-clinics-digital-data-business [T2]
+   <https://www.healthleadersmedia.com/innovation/john-halamka-md-launches-mayo-clinics-digital-data-business> [T2]
    *Used for: 8 direct Halamka quotes; platform vision; change management philosophy*
 
 2. Microsoft News. "Mayo Clinic to deploy and test Microsoft generative AI tools." September 28, 2023.
-   https://news.microsoft.com/source/2023/09/28/mayo-clinic-to-deploy-and-test-microsoft-generative-ai-tools/ [T2]
+   <https://news.microsoft.com/source/2023/09/28/mayo-clinic-to-deploy-and-test-microsoft-generative-ai-tools/> [T2]
    *Used for: Microsoft 365 Copilot Early Access Program details; CIO Cris Ross quote*
 
 3. Fierce Healthcare. "Mayo Clinic closed out 2023 with $18B in revenue, 6% operating margin." February 2024.
-   https://www.fiercehealthcare.com/providers/mayo-clinic-pulls-18b-revenue-6-operating-margin-2023 [T2]
+   <https://www.fiercehealthcare.com/providers/mayo-clinic-pulls-18b-revenue-6-operating-margin-2023> [T2]
    *Used for: $17.9B revenue, $1.1B operating income, 6% margin, 14,000 new hires, 2,500 clinical trials, 130+ countries*
 
-4. National Academies of Sciences, Engineering, and Medicine. "Sharing Clinical Research Data: Chapter 12 — Mayo-Google Partnership Case Study." 2023.
-   https://www.ncbi.nlm.nih.gov/books/NBK594445/ [T2]
+4. National Academies of Sciences, Engineering, and Medicine. "Sharing Clinical Research Data: Chapter 12 -- Mayo-Google Partnership Case Study." 2023.
+   <https://www.ncbi.nlm.nih.gov/books/NBK594445/> [T2]
    *Used for: "Data under glass" model; de-identification timeline (Jan-Aug 2020); One Table task force; DaTA Board formation; federated learning architecture; 1.2M records centralized*
 
 5. Wikipedia. "John Halamka." Last updated April 2026.
-   https://en.wikipedia.org/wiki/John_Halamka [T2]
+   <https://en.wikipedia.org/wiki/John_Halamka> [T2]
    *Used for: Biographical profile; education (Stanford, UCSF/UC Berkeley); career history; Beth Israel Deaconess; Harvard faculty role; publications*
 
 6. STAT News. "MD Anderson Benches IBM Watson in Setback for Artificial Intelligence in Medicine." September 5, 2017.
-   https://www.statnews.com/2017/09/05/md-anderson-cancer-ibm-watson/ [T2]
+   <https://www.statnews.com/2017/09/05/md-anderson-cancer-ibm-watson/> [T2]
    *Used for: $62M IBM Watson MD Anderson project discontinuation; specific cost and timeline of failure*
 
 7. Reuters. "IBM Sells Watson Health Unit to Private Equity Firm." January 21, 2022.
-   https://www.reuters.com/business/healthcare-pharmaceuticals/ibm-sells-watson-health-unit-private-equity-firm-2022-01-21/ [T2]
+   <https://www.reuters.com/business/healthcare-pharmaceuticals/ibm-sells-watson-health-unit-private-equity-firm-2022-01-21/> [T2]
    *Used for: IBM Watson Health divestiture to Francisco Partners; confirmation of Watson Health's end*
 
 **Tier 3 Sources (Existence confirmed via search; full text not accessible)**
 
 8. CXOTalk. "Data and AI Improve Patient Outcomes at the Mayo Clinic." 2023.
-   https://www.cxotalk.com/episode/data-and-ai-improve-patient-outcomes-at-the-mayo-clinic [T3]
-   *Used for: "If your doctor can be replaced by AI" quote — T3 hedged; transcript not accessible*
+   <https://www.cxotalk.com/episode/data-and-ai-improve-patient-outcomes-at-the-mayo-clinic> [T3]
+   *Used for: "If your doctor can be replaced by AI" quote -- T3 hedged; transcript not accessible*
 
-9. American Medical Association. "ChatGPT and AI Integration in Health Care" — interview with Dr. John Halamka. 2023.
-   https://www.ama-assn.org/practice-management/digital-health/chatgpt-and-ai-integration-health-care-john-d-halamka-md-ms [T3]
+9. American Medical Association. "ChatGPT and AI Integration in Health Care" -- interview with Dr. John Halamka. 2023.
+   <https://www.ama-assn.org/practice-management/digital-health/chatgpt-and-ai-integration-health-care-john-d-halamka-md-ms> [T3]
    *Used for: Halamka's AI integration philosophy; confirms his 2023 public positions*
 
 10. Healthcare Dive. "Mayo Clinic boosted operating income by 82% in 2023." February 2024.
-    https://www.healthcaredive.com/news/mayo-clinic-2023-earnings/708907/ [T3]
-    *Used for: 10.2% revenue growth figure; 82% operating income growth — cross-references Fierce Healthcare data*
+    <https://www.healthcaredive.com/news/mayo-clinic-2023-earnings/708907/> [T3]
+    *Used for: 10.2% revenue growth figure; 82% operating income growth -- cross-references Fierce Healthcare data*
 
 11. Mayo Clinic News Network. "Mayo Clinic selects Google as strategic partner for health care innovation and cloud computing." September 2019.
-    https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-selects-google-as-strategic-partner-for-health-care-innovation-cloud-computing/ [T3 — 403 access blocked]
+    [T3 -- 403 access blocked; confirmed via search]
     *Used for: 10-year Google partnership announcement date; initial partnership scope*
 
 12. Mayo Clinic News Network. "Dr. John Halamka named president of Mayo Clinic Platform." December 2019.
-    https://newsnetwork.mayoclinic.org/discussion/dr-john-halamka-named-president-of-mayo-clinic-platform/ [T3 — 403 access blocked]
+    [T3 -- 403 access blocked; confirmed via search]
     *Used for: Formal appointment announcement; inaugural president designation*
 
 13. Mayo Clinic News Network. "Mayo Clinic Platform expands its distributed data network to partner to globally transform patient care." May 2023.
-    https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-platform-expands-its-distributed-data-network-to-partner-to-globally-transform-patient-care/ [T3 — 403 access blocked]
+    [T3 -- 403 access blocked; confirmed via search]
     *Used for: Brazil, Israel, Canada network expansion; 30M+ patient data milestone*
 
 14. Mayo Clinic News Network. "4 Takeaways from PlatforMed 2024 to Advance Collaboration, Transformation in Healthcare." June 2024.
-    https://newsnetwork.mayoclinic.org/discussion/4-takeaways-from-platformed-2024-to-advance-collaboration-transformation-in-healthcare-with-platform-thinking/ [T3 — 403 access blocked]
+    [T3 -- 403 access blocked; confirmed via search]
     *Used for: 56M patient lives; 81 solution developers; CEO Farrugia PlatforMed quote*
 
 15. Becker's Hospital Review. "Mayo Clinic Platform doubles ecosystem size." 2024.
-    https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/mayo-clinic-platform-doubles-ecosystem-size/ [T3]
+    <https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/mayo-clinic-platform-doubles-ecosystem-size/> [T3]
     *Used for: 81 solution developers; 61 health providers; 9 network partners (cross-verifies PlatforMed data)*
 
 16. MIT Sloan Management Review. "Mayo Clinic's Healthy Model for AI Success." 2023.
-    https://sloanreview.mit.edu/article/mayo-clinics-healthy-model-for-ai-success/ [T3 — paywalled; AU library access recommended]
-    *Used for: AI governance framework context; platform thinking in healthcare — search snippet only*
+    <https://sloanreview.mit.edu/article/mayo-clinics-healthy-model-for-ai-success/> [T3 -- paywalled; AU library access recommended]
+    *Used for: AI governance framework context; platform thinking in healthcare -- search snippet only*
 
 ---
 
@@ -470,4 +471,4 @@ This case study package was developed using the Agentic AI Case Study Developmen
 
 *Prepared by: Akshay Kumar | ITEC-617 | Kogod School of Business, American University | Spring 2026*
 *AI Tool: Claude Code (claude-sonnet-4-6) | Research date: April 26-May 3, 2026*
-*Verification completed: May 3, 2026 — /verify-all skill run*
+*Verification completed: May 3, 2026 -- /verify-all skill run*

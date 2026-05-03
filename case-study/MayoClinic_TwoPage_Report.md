@@ -4,7 +4,7 @@
 **Akshay Kumar** | ITEC-617 | Kogod School of Business, American University | Spring 2026
 **Date:** May 3, 2026
 **Company:** Mayo Clinic | **DT Initiative:** AI Platform Transformation in Healthcare
-**Repository:** https://github.com/akbknight/mayo-clinic-dt-case-study
+**Repository:** <https://github.com/akbknight/mayo-clinic-dt-case-study>
 
 ---
 

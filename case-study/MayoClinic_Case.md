@@ -120,7 +120,7 @@ He had a diagnosis:
 
 > "It isn't technology; technology is good enough. It's fear of change."
 > -- Dr. John Halamka, HealthLeaders Media, 2020
-
+>
 > "Change management is always the hardest task."
 > -- Dr. John Halamka, HealthLeaders Media, 2020
 
@@ -193,7 +193,7 @@ His model was explicit on this point:
 > "You need a platform by which you can convene people and that may mean third-party
 > companies, academics, or government leaders."
 > -- Dr. John Halamka, HealthLeaders Media, 2020
-
+>
 > "The Mayo brand is a very powerful way to bring people together."
 > -- Dr. John Halamka, HealthLeaders Media, 2020
 
@@ -345,7 +345,7 @@ His answer was consistent and direct:
 > "Machine learning is pattern recognition. As a clinician, I was trained to recognize
 > patterns."
 > -- Dr. John Halamka, HealthLeaders Media, 2020
-
+>
 > "Machine learning is not replacing humans, but [offers] tools that augment human
 > decision-making."
 > -- Dr. John Halamka, HealthLeaders Media, 2020

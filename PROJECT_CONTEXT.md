@@ -7,7 +7,7 @@ Quick reference for session continuity. Updated by /verify-all on 2026-05-03.
 **Case**: Mayo Clinic — AI Platform Transformation in Healthcare
 **Student**: Akshay Kumar
 **Course**: ITEC-617 | Kogod School of Business, American University | Spring 2026
-**Repository**: https://github.com/akbknight/mayo-clinic-dt-case-study
+**Repository**: <https://github.com/akbknight/mayo-clinic-dt-case-study>
 **Protagonist**: Dr. John Halamka, President, Mayo Clinic Platform
 **DT Initiative**: AI Platform + Data Governance (Google Cloud partnership, Microsoft Copilot, Platform_Accelerate)
 
@@ -22,7 +22,7 @@ Quick reference for session continuity. Updated by /verify-all on 2026-05-03.
 - [x] MayoClinic_Teaching_Note.md — ~3,579 words
 - [x] MayoClinic_TwoPage_Report.md — ~1,038 words
 
-**Website**: GitHub Pages live at https://akbknight.github.io/mayo-clinic-dt-case-study
+**Website**: GitHub Pages live at <https://akbknight.github.io/mayo-clinic-dt-case-study>
 **PDFs**: Exported via fpdf2 (scripts/export_pdf.py); validated with pdfminer
 
 ## Source Quality

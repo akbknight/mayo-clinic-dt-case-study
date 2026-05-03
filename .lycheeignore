@@ -1,0 +1,24 @@
+# Lychee link-check exclusions for mayo-clinic-dt-case-study
+#
+# These URLs are intentionally excluded from automated link checking.
+# Each URL is confirmed to exist through manual research but returns
+# non-200 status codes to automated bots.
+#
+# Format: one regex per line (lychee uses Rust regex syntax)
+
+# Mayo Clinic News Network — returns 403 to all automated fetchers.
+# This is a deliberate infrastructure choice documented in the project.
+https://newsnetwork\.mayoclinic\.org/
+
+# CXOTalk — returns 403 to automated fetchers.
+https://www\.cxotalk\.com/
+
+# MIT Sloan Management Review — paywalled; returns 403 or auth redirect.
+https://sloanreview\.mit\.edu/
+
+# Trade press and association sites that commonly block automated agents:
+https://www\.beckershospitalreview\.com/
+https://www\.healthcaredive\.com/
+https://www\.fiercehealthcare\.com/
+https://www\.healthleadersmedia\.com/
+https://www\.ama-assn\.org/

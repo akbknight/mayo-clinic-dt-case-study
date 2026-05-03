@@ -104,23 +104,23 @@ This log documents the process throughout. Key observations:
 
 ## Reflection Notes
 
-### What AI did well:
+### What AI Did Well
 1. Rapid cross-source research in minutes vs. hours
 2. Consistent document structure following HBR templates
 3. Identifying gaps and flagging unverified claims honestly
 4. Extracting verified quotes from accessible sources without fabrication
 
-### What AI could NOT do:
+### What AI Could Not Do
 1. Access paywalled academic sources (Mayo Clinic News Network blocked all requests)
 2. Conduct original interviews with Dr. Halamka
 3. Access proprietary Mayo Clinic Platform data or financials beyond public disclosures
 4. Replace human judgment in assessing source credibility and narrative framing
 
-### What surprised me:
+### What Surprised Me
 - Mayo Clinic News Network returns 403 errors to automated fetchers — a deliberate data protection choice that mirrors their "data under glass" philosophy in their AI work
 - The depth of publicly available information about Dr. Halamka (his blog, Wikipedia, HealthLeaders) made him an unusually well-documented protagonist
 
-### Process improvements for future cases:
+### Process Improvements for Future Cases
 - Download full PDFs before starting (T1 sources are much stronger)
 - Use university library access to get MIT Sloan, NEJM, and JAMA sources
 - Conduct a 20-minute interview with a healthcare IT professional for primary T1 voice
