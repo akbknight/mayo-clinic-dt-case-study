@@ -146,6 +146,33 @@ nav {
 .hero-meta a { color: rgba(255,255,255,0.55); text-decoration: none; }
 .hero-meta a:hover { color: white; }
 
+/* Hero stats as source links */
+a.hero-stat {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+a.hero-stat:hover .val {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(255,255,255,0.6);
+}
+
+/* Inline citation links throughout body */
+.src-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-color: currentColor;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.src-link:hover { opacity: 1; text-decoration-style: solid; }
+
 /* ── Container & Sections ───────────────────────────── */
 .container {
   max-width: 1100px;
@@ -614,6 +641,8 @@ section.dark .section-intro { color: rgba(255,255,255,0.65); }
 .src-tier.t3 { background: #FEF3C7; color: #92400E; }
 .src-body strong { display: block; color: var(--text); font-weight: 600; font-size: 13.5px; }
 .src-body span   { color: var(--gray); font-size: 13px; }
+.src-body a      { color: var(--navy); text-decoration: none; font-weight: 600; }
+.src-body a:hover { text-decoration: underline; }
 
 /* ── Footer ─────────────────────────────────────────── */
 footer {
